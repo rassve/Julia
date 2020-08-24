@@ -1,0 +1,106 @@
+Calibration Values for REF600-16093  - S/N# 16093
+12/10/2019  11:35:05
+
+Ich Channel Offset [0]:  -0.0003336  (+/-0.003) - PASSED
+Ich Channel Offset [1]:  -0.0002803  (+/-0.003) - PASSED
+Ich Channel Offset [2]:  -0.0002828  (+/-0.003) - PASSED
+Ich Channel Offset [3]:  -0.0003285  (+/-0.003) - PASSED
+Ich Channel Offset [4]:  0  (+/-0.003) - PASSED
+Ich Channel Offset [5]:  -0.0002862  (+/-0.003) - PASSED
+Ich Channel Offset [6]:  -0.0002623  (+/-0.003) - PASSED
+Ich Channel Offset [7]:  -0.0002668  (+/-0.003) - PASSED
+Ich Channel Offset [8]:  -0.0003134  (+/-0.003) - PASSED
+Ich Channel Offset [9]:  0  (+/-0.003) - PASSED
+Ich Channel Offset [10]:  -0.0004549  (+/-0.003) - PASSED
+Ich Channel Offset [11]:  -0.0004078  (+/-0.003) - PASSED
+Ich Channel Offset [12]:  -0.0004094  (+/-0.003) - PASSED
+Ich Channel Offset [13]:  -0.0004556  (+/-0.003) - PASSED
+Ich Channel Offset [14]:  0  (+/-0.003) - PASSED
+Vch Channel Offset [0]:  2.291793E-005  (+/-0.003) - PASSED
+Vch Channel Offset [1]:  5.979894E-005  (+/-0.003) - PASSED
+Vch Channel Offset [2]:  2.990119E-005  (+/-0.003) - PASSED
+Vch Channel Offset [3]:  -1.076598E-005  (+/-0.003) - PASSED
+Vch Channel Offset [4]:  0  (+/-0.003) - PASSED
+Vch Channel Offset [5]:  9.328849E-005  (+/-0.003) - PASSED
+Vch Channel Offset [6]:  0.0001008  (+/-0.003) - PASSED
+Vch Channel Offset [7]:  6.997876E-005  (+/-0.003) - PASSED
+Vch Channel Offset [8]:  4.252743E-005  (+/-0.003) - PASSED
+Vch Channel Offset [9]:  0  (+/-0.003) - PASSED
+Vch Channel Offset [10]:  -0.0002384  (+/-0.003) - PASSED
+Vch Channel Offset [11]:  -0.0002246  (+/-0.003) - PASSED
+Vch Channel Offset [12]:  -0.0002754  (+/-0.003) - PASSED
+Vch Channel Offset [13]:  -0.0003312  (+/-0.003) - PASSED
+Vch Channel Offset [14]:  0  (+/-0.003) - PASSED
+Vch Channel Offset [15]:  -0.0002384  (+/-0.003) - PASSED
+Vch Channel Offset [16]:  -0.0002246  (+/-0.003) - PASSED
+Vch Channel Offset [17]:  -0.0002754  (+/-0.003) - PASSED
+Vch Channel Offset [18]:  -0.0003312  (+/-0.003) - PASSED
+Vch Channel Offset [19]:  0  (+/-0.003) - PASSED
+Ach Channel Offset [0]:  1.201648E-006  (+/-0.003) - PASSED
+Ach Channel Offset [1]:  6.537397E-005  (+/-0.003) - PASSED
+Ach Channel Offset [2]:  -2.123987E-005  (+/-0.003) - PASSED
+Ach Channel Offset [3]:  8.524761E-005  (+/-0.003) - PASSED
+Ach Channel Offset [4]:  0  (+/-0.003) - PASSED
+Ach Channel Offset [5]:  -1.102325E-005  (+/-0.003) - PASSED
+Ach Channel Offset [6]:  3.012796E-005  (+/-0.003) - PASSED
+Ach Channel Offset [7]:  -4.640346E-005  (+/-0.003) - PASSED
+Ach Channel Offset [8]:  5.555824E-005  (+/-0.003) - PASSED
+Ach Channel Offset [9]:  0  (+/-0.003) - PASSED
+Ach Channel Offset [10]:  0.0004002  (+/-0.003) - PASSED
+Ach Channel Offset [11]:  0.0004627  (+/-0.003) - PASSED
+Ach Channel Offset [12]:  0.0003947  (+/-0.003) - PASSED
+Ach Channel Offset [13]:  0.0004976  (+/-0.003) - PASSED
+Ach Channel Offset [14]:  0  (+/-0.003) - PASSED
+Esig Attenuation Offset [0]:  -0.0001098  (+/-0.003) - PASSED
+Esig Attenuation Offset [1]:  -0.0001052  (+/-0.003) - PASSED
+Esig Attenuation Offset [2]:  2.553308E-007  (+/-0.003) - PASSED
+Esig Attenuation Offset [3]:  -0.0015577  (+/-0.012) - PASSED
+IE Offset [0]:  0  (+/-0.003) - PASSED
+IE Offset [1]:  0.1553569  (+/-0.5029737) - PASSED
+IE Offset [2]:  0.0153587  (+/-0.0529929) - PASSED
+IE Offset [3]:  0.0020666  (+/-0.0079992) - PASSED
+IE Offset [4]:  0.0006056  (+/-0.0035) - PASSED
+IE Offset [5]:  0.0004604  (+/-0.00305) - PASSED
+IE Offset [6]:  0.0004034  (+/-0.003005) - PASSED
+IE Offset [7]:  0.0003905  (+/-0.0030005) - PASSED
+IE Offset [8]:  0.0004018  (+/-0.0030001) - PASSED
+IE Offset [9]:  0.0006563  (+/-0.003) - PASSED
+IE Offset [10]:  0.0006772  (+/-0.003) - PASSED
+IE Offset [11]:  0.0006473  (+/-0.003) - PASSED
+IE Offset [12]:  0  (+/-0.003) - PASSED
+IE Offset [13]:  0  (+/-0.003) - PASSED
+IE Offset [14]:  0  (+/-0.003) - PASSED
+IE Offset [15]:  0  (+/-0.003) - PASSED
+EL Offset [0]:  0  (+/-0.03) - PASSED
+EL Offset [1]:  0.000104  (+/-0.003) - PASSED
+EL Offset [2]:  7.465806E-005  (+/-0.003) - PASSED
+EL Offset [3]:  0.0001101  (+/-0.003) - PASSED
+EL Offset [4]:  0.0001059  (+/-0.003) - PASSED
+EL Offset [5]:  8.567372E-005  (+/-0.003) - PASSED
+EL Offset [6]:  6.74915E-005  (+/-0.003) - PASSED
+EL Offset [7]:  7.19481E-005  (+/-0.003) - PASSED
+EL Offset [8]:  5.536335E-005  (+/-0.003) - PASSED
+EL Offset [9]:  0.0000976  (+/-0.003) - PASSED
+EL Offset [10]:  0.000101  (+/-0.003) - PASSED
+EL Offset [11]:  0.0000972  (+/-0.003) - PASSED
+EL Offset [12]:  0  (+/-0.003) - PASSED
+EL Offset [13]:  0  (+/-0.003) - PASSED
+EL Offset [14]:  0  (+/-0.003) - PASSED
+EL Offset [15]:  0  (+/-0.003) - PASSED
+Pstat Control Offset [0]:  0.0001351  (+/-0.008) - PASSED
+Scan DAC Offset [0]:  0.0017808  (+/-0.008) - PASSED
+Scan DAC Offset [1]:  0.001877  (+/-0.008) - PASSED
+Scan DAC Offset [2]:  0.0022429  (+/-0.008) - PASSED
+ZRA Scan Offset [0]:  0.0010281  (+/-0.008) - PASSED
+ZRA Scan Offset [1]:  0.0010965  (+/-0.008) - PASSED
+ZRA Scan Offset [2]:  0.0014189  (+/-0.008) - PASSED
+Pstat Bias DAC Offset [0]:  6.93895E-005  (+/-0.008) - PASSED
+Positive Feedback Offset [0]:  2.230763E-005  (+/-0.005) - PASSED
+APPLIED DC PSTAT:  0.0005001  (0.0005 +/- 10%) - PASSED
+APPLIED DC PSTAT:  -0.0004998  (-0.0005 +/- 10%) - PASSED
+APPLIED DC GSTAT:  -0.998485  (-1 +/- 10%) - PASSED
+APPLIED DC GSTAT:  0.998407  (1 +/- 10%) - PASSED
+DDS Offset [0]:  -0.000822  (+/-0.005) - PASSED
+AC Calibration - PASSED
+
+System Passed Calibration with no warnings or errors.
