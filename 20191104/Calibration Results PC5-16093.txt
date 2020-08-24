@@ -1,0 +1,4 @@
+Calibration Values for REF600-16093  - S/N# 16093
+11/5/2019  9:34:29
+
+EXPERIMENTABORTED	TOGGLE	T	Experiment Aborted

@@ -1,0 +1,126 @@
+; Gamry Sequence Wizard Generated Script
+
+; Standard Includes
+include "sequencer.exp"
+
+; Sequence Required Includes
+include "sequencerMANUALPSTATSELECT.exp"
+include "sequencerPSTATCELLSTATEMODE.exp"
+include "sequencerCHRONOAMP.exp"
+include "sequencerLSV.exp"
+
+function Main(argv)
+
+	; Initialize the sequencer
+	Sequencer = SEQUENCER.New(argv)
+
+	; Create experiment object vector
+	expt = VectorNew(4)
+
+	; There are no arguments for Manual Potentiostat Select
+	args = NIL
+	
+	; Create Manual Potentiostat Select object
+	expt[0] = MANUALPSTATSELECT.New (args)
+
+	; Number of Arguments for Cell State Mode
+	args = VectorNew(1)
+
+	; Create the argument list for Cell State Mode
+	selectvector = VectorNew (2)
+	selectvector[0] = "Normal"
+	selectvector[1] = "Leave On"
+	args[0] = SELECTOR.New ("CELLSTATEMODE", selectvector, 1, "Cell State Mode")
+	
+	; Create Cell State Mode object
+	expt[1] = PSTATCELLSTATEMODE.New (args)
+
+	; Number of Arguments for Chronoamperometry
+	args = VectorNew(19)
+
+	; Create the argument list for Chronoamperometry
+	args[0] = LABEL.New ("TITLE", 128, "Chronoamperometry Scan", "Test Identifier")
+	args[1] = OUTPUT.New ("OUTPUT", "konstforev.DTA", "Output File")
+	args[2] = NOTES.New ("NOTES", 24, "0.05 V vs ref i 300 sek ", "Notes...")
+	args[3] = POTEN.New ("VPRESTEP", 0.05, FALSE, "Pre-step Voltage (V)")
+	args[4] = QUANT.New ("TPRESTEP", 0.0, "Pre-step Delay Time (s)")
+	args[5] = POTEN.New ("VSTEP1", 0.05, FALSE, "Step 1 Voltage (V)")
+	args[6] = QUANT.New ("TSTEP1", 300.0, "Step 1 Time (s)")
+	args[7] = POTEN.New ("VSTEP2", 0.05, FALSE, "Step 2 Voltage (V)")
+	args[8] = QUANT.New ("TSTEP2", 0.0, "Step 2 Time (s)")
+	args[9] = QUANT.New ("SAMPLETIME", 5.0, "Sample Period (s)")
+	args[10] = QUANT.New ("ILIMIT", 200.0, "Limit I (mA/cm^2)")
+	args[11] = TOGGLE.New ("DECIMATE", FALSE, "Decimate")
+	args[12] = QUANT.New ("AREA", 1.0, "Sample Area (cm^2)")
+	selectvector = VectorNew (2)
+	selectvector[0] = "Auto"
+	selectvector[1] = "Fixed"
+	args[13] = SELECTOR.New ("IMODE", selectvector, 1, "I/E Range Mode")
+	selectvector = VectorNew (3)
+	selectvector[0] = "Fast"
+	selectvector[1] = "Noise Reject"
+	selectvector[2] = "Surface"
+	args[14] = SELECTOR.New ("SAMPLINGMODE", selectvector, 1, "Sampling Mode")
+	args[15] = QUANT.New ("IRANGE", 15.0, "Max Current (mA)")
+	args[16] = QUANT.New ("EQDELAY", 5.0, "Equil. Time (s)")
+	selectvector = VectorNew (3)
+	selectvector[0] = "None"
+	selectvector[1] = "PF"
+	selectvector[2] = "CI"
+	args[17] = SELECTOR.New ("IRCOMP", selectvector, 0, "IRComp")
+	args[18] = QUANT.New ("PFCOR", 50.0, "PF Corr. (ohm)")
+	
+	; Create Chronoamperometry object
+	expt[2] = CHRONOAMP.New (args)
+
+	; Number of Arguments for Linear Sweep Voltammetry
+	args = VectorNew(14)
+
+	; Create the argument list for Linear Sweep Voltammetry
+	args[0] = LABEL.New ("TITLE", 128, "Linear Sweep Voltammetry", "Test Identifier")
+	args[1] = OUTPUT.New ("OUTPUT", "sweepev.DTA", "Output File")
+	args[2] = NOTES.New ("NOTES", 33, "Sveper från 0.05 till -0.5 vs ref", "Notes...")
+	args[3] = POTEN.New ("VINIT", 0.05, FALSE, "Initial E (V)")
+	args[4] = POTEN.New ("VFINAL", -0.5, FALSE, "Final E (V)")
+	args[5] = QUANT.New ("SCANRATE", 0.1, "Scan Rate (mV/s)")
+	args[6] = QUANT.New ("STEPSIZE", 0.01, "Step Size (mV)")
+	args[7] = QUANT.New ("AREA", 1.0, "Sample Area (cm^2)")
+	selectvector = VectorNew (2)
+	selectvector[0] = "Auto"
+	selectvector[1] = "Fixed"
+	args[8] = SELECTOR.New ("IMODE", selectvector, 1, "I/E Range Mode")
+	selectvector = VectorNew (3)
+	selectvector[0] = "Fast"
+	selectvector[1] = "Noise Reject"
+	selectvector[2] = "Surface"
+	args[9] = SELECTOR.New ("SAMPLINGMODE", selectvector, 1, "Sampling Mode")
+	args[10] = QUANT.New ("IRANGE", 15.0, "Max Current (mA)")
+	args[11] = QUANT.New ("EQDELAY", 5.0, "Equil. Time (s)")
+	selectvector = VectorNew (3)
+	selectvector[0] = "None"
+	selectvector[1] = "PF"
+	selectvector[2] = "CI"
+	args[12] = SELECTOR.New ("IRCOMP", selectvector, 0, "IRComp")
+	args[13] = QUANT.New ("PFCOR", 50.0, "PF Corr. (ohm)")
+	
+	; Create Linear Sweep Voltammetry object
+	expt[3] = LSV.New (args)
+
+	; Check output filenames and run-time parameters
+	Sequencer.ParameterCheck (expt)
+
+	; Display the sequence steps in the Stdout window
+	Sequencer.DisplaySequence (expt)
+
+	; Pre-Check Authorizations
+	MANUALPSTATSELECT.CheckAuth ()
+	PSTATCELLSTATEMODE.CheckAuth ()
+	CHRONOAMP.CheckAuth ()
+	LSV.CheckAuth ()
+	
+	; Run The Sequence
+	Sequencer.Run (expt)
+
+	; Clean Up and Close
+	Sequencer.Close ()
+
